@@ -5,6 +5,8 @@
 
 package com.mycompany.proyectoprueba;
 
+import java.util.Scanner;
+
 /**
  *
  * @author gabriel
@@ -12,6 +14,17 @@ package com.mycompany.proyectoprueba;
 public class ProyectoPrueba {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner entrada = new Scanner(System.in);
+        
+        int seleccion = 0;
+        
+        do {
+            System.out.println("ESTE ES UN MENU");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.print("INGRESE SU OPCION: ");
+            seleccion = entrada.nextInt();
+        } while (seleccion != 0);
     }
 }
